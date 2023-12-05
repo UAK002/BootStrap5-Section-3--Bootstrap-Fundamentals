@@ -12,30 +12,122 @@
       <h1 class="mb-5">Forms & Input</h1>
 
       <!-- Basic Form -->
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" name="" id="" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Password</label>
+          <input type="password" name="" id="" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <input
+            type="checkbox"
+            name="remember"
+            id=""
+            class="form-check-input"
+          />
+          <label for="remember" class="form-check-label">Remember me</label>
+        </div>
+        <input type="submit" value="Login" class="btn btn-primary" />
+      </form>
 
       <br /><br />
 
       <!-- Other Fields -->
       <form>
         <!-- Select Fields -->
+        <div class="mb-3">
+          <select class="form-select">
+            <option>Best Time to call</option>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+          </select>
+        </div>
 
         <!-- Textarea -->
+        <div class="mb-3">
+          <textarea class="form-control" placeholder="Message"></textarea>
+        </div>
 
         <!-- Switch -->
+        <div class="form-check form-switch">
+          <input type="checkbox" class="form-check-input" />
+        </div>
 
         <!-- Inline Checkboxes -->
+        <div class="mb-3">
+          <div class="form-check form-check-inline">
+            <input
+              type="checkbox"
+              value="Option 1"
+              id="ch1"
+              class="form-check-input"
+            />
+            <label for="ch1" class="form-check-label">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="checkbox"
+              value="Option 2"
+              id="ch2"
+              class="form-check-input"
+            />
+            <label for="ch2" class="form-check-label">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="checkbox"
+              value="Option 3"
+              id="ch3"
+              class="form-check-input"
+            />
+            <label for="ch3" class="form-check-label">3</label>
+          </div>
+        </div>
 
         <!-- Toggle Button -->
+        <div class="mb-3">
+          <input type="checkbox" class="btn-check" id="btn-check" />
+          <label for="btn-check" class="btn btn-danger">Button Toggle</label>
+        </div>
 
         <!-- Range -->
+        <div class="mb-3">
+          <label for="range" class="form-label"></label>
+          <input type="range" name="" id="range" class="form-range" />
+        </div>
 
         <!-- Range Steps -->
+        <div class="mb-3">
+          <label for="range" class="form-label"></label>
+          <input
+            type="range"
+            name=""
+            id="range"
+            class="form-range"
+            step="0.5"
+            min="0"
+            max="5"
+          />
+        </div>
       </form>
 
       <br /><br />
 
       <!-- Input Groups -->
-      <form></form>
+      <form>
+        <div class="input-group mb-3">
+          <span class="input-group-text">@</span>
+          <input type="email" placeholder="email" id="" class="form-control" />
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" />
+          <button class="btn btn-outline-secondary">submit</button>
+        </div>
+      </form>
 
       <!-- Don't go past here -->
     </div>
